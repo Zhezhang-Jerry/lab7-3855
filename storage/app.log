@@ -1,0 +1,69 @@
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored sell event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – Stored buy event with trace id d290f1ee-6c54-4b01-90e6-d701748f0851
+STORAGE :: DEBUG – msg
+STORAGE :: DEBUG – msg
+STORAGE :: DEBUG – <pykafka.protocol.message.Message object at 0x10652f6f0>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1062a3220>
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x106283220>
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1118a3680>
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1068a3680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1050a3680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x111ea3680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1088cf680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1066a3680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x1064a3680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x108793680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x106da3680>
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:23:49Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "ac1a632b-213f-4440-a620-37936099f851"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': 'ac1a632b-213f-4440-a620-37936099f851'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x109800c10>
+STORAGE :: DEBUG – Stored buy event with trace id ac1a632b-213f-4440-a620-37936099f851
+STORAGE :: DEBUG – {"type": "buy", "datetime": "2023-02-23T10:48:08Z", "payload": {"buy_id": "d290f1ee-6c54-4b01-90e6-d701748f0851", "buy_qty": 1, "item_name": "Item 1", "item_price": 19.99, "trace_id": "40da720d-de14-4cc9-aa5f-8925562d7679"}}
+STORAGE :: DEBUG – {'buy_id': 'd290f1ee-6c54-4b01-90e6-d701748f0851', 'buy_qty': 1, 'item_name': 'Item 1', 'item_price': 19.99, 'trace_id': '40da720d-de14-4cc9-aa5f-8925562d7679'}
+STORAGE :: DEBUG – CONSUMER::storing buy event
+STORAGE :: DEBUG – msg objetc <pykafka.protocol.message.Message object at 0x109800cf0>
+STORAGE :: DEBUG – Stored buy event with trace id 40da720d-de14-4cc9-aa5f-8925562d7679

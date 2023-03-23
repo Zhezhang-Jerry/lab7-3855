@@ -1,0 +1,9 @@
+version: 1
+buy:
+  url: http://172.30.0.9:8090/buy
+sell:
+  url: http://172.30.0.9:8090/sell
+events:
+  hostname: 172.30.0.5
+  port: 9092
+  topic: events
