@@ -75,7 +75,7 @@ services:
       - "3306:3306"
     networks:
       appnetwork:
-        ipv4_address: 172.30.0.6
+        ipv4_address: 172.30.0.4
 
 networks:
   appnetwork:
