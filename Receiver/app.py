@@ -65,7 +65,8 @@ def sell(body):
     process_event(body, 'sell')
     return NoContent, 201
 
-def check(body):
+def health(body):
+    print("check finished")
     return NoContent, 200
 
 app = connexion.FlaskApp(__name__, specification_dir='')
