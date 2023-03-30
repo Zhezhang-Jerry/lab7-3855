@@ -65,11 +65,15 @@ def sell(body):
     process_event(body, 'sell')
     return NoContent, 201
 
+def check(body):
+    return NoContent, 200
+
 app = connexion.FlaskApp(__name__, specification_dir='')
 
 app.add_api("openapi.yml", base_path="/receiver", strict_validation=True, validate_responses=True)
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
+
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())

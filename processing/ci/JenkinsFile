@@ -1,0 +1,2 @@
+@Library('a3_ci_func@main') _
+python_build('processing', 'processingapp')

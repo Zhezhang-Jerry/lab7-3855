@@ -29,32 +29,40 @@ services:
         ipv4_address: 172.30.0.5
 
   receiver:
-    image: receiver
+    build: ./receiver
     ports:
-    - "8080:8080"
+      - "8080:8080"
     networks:
       appnetwork:
         ipv4_address: 172.30.0.10
 
   storage:
-    image: storage
+    build: ./storage
     ports:
-    - "8090:8090"
+      - "8090:8090"
     depends_on:
-    - "receiver"
+      - "receiver"
     networks:
       appnetwork:
         ipv4_address: 172.30.0.9
 
   processing:
-    image: processing
+    build: ./processing
     ports:
-    - "8100:8100"
+      - "8100:8100"
     depends_on:
-    - "storage"
+      - "storage"
     networks:
       appnetwork:
         ipv4_address: 172.30.0.8
+
+  health:
+    build: ./health
+    ports:
+      - "8110:8110"
+    networks:
+      appnetwork:
+        ipv4_address: 172.30.0.7
 
   mysql:
     image: mysql:latest
@@ -67,7 +75,7 @@ services:
       - "3306:3306"
     networks:
       appnetwork:
-        ipv4_address: 172.30.0.7
+        ipv4_address: 172.30.0.6
 
 networks:
   appnetwork:
