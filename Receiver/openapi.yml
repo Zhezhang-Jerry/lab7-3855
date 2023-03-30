@@ -9,24 +9,101 @@ tags:
   - name: devices
     description: Operations available to connected devices
 paths:
-  /check:
+  /buy:
+    post:
+      tags:
+        - devices
+      summary: Reports a buy event
+      operationId: app.buy
+      description: Adds a new buy event to the system
+      responses:
+        '201':
+          description: Buy event created
+        '400':
+          description: 'Invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Buy'
+        description: Buy event to add
+  /sell:
+    post:
+      tags:
+        - devices
+      summary: Reports a sell event
+      operationId: app.sell
+      description: Adds a new sell event to the system
+      responses:
+        '201':
+          description: Sell event created
+        '400':
+          description: 'Invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Sell'
+        description: Sell event to add
+  /health:
     get:
       tags:
         - devices
-      summary: Returns statuses of services
-      operationId: app.check
-      description: Returns status
+      summary: Returns 200
+      operationId: app.health
+      description: Returns 200
       responses:
         '200':
           description: Returned status
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  receiver:
-                    type: string
-                  storage:
-                    type: string
-                  processing:
-                    type: string
+components:
+  schemas:
+    Buy:
+      type: object
+      required:
+        - buy_id
+        - item_name
+        - item_price
+        - buy_qty
+      properties:
+        buy_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        item_name:
+          type: string
+          example: Item 1
+        item_price:
+          type: number
+          example: 19.99
+        buy_qty:
+          type: integer
+          example: 1
+        trace_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+    Sell:
+      type: object
+      required:
+        - sell_id
+        - item_name
+        - item_price
+        - sell_qty
+      properties:
+        sell_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
+        item_name:
+          type: string
+          example: Item 1
+        item_price:
+          type: number
+          example: 19.99
+        sell_qty:
+          type: integer
+          example: 1
+        trace_id:
+          type: string
+          format: uuid
+          example: d290f1ee-6c54-4b01-90e6-d701748f0851
