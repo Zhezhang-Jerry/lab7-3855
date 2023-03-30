@@ -1,13 +1,27 @@
-import './App.css'
-import Stats from './components/Stats'
+import { useState } from 'react';
+import './App.css';
+import Stats from './components/Stats';
 
 const App = () => {
+  const [statuses, setStatuses] = useState({});
+
+  const handleCheckHealthClick = async () => {
+    try {
+      const res = await fetch('172.30.0.7/check');
+      const data = await res.json();
+      setStatuses(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <div className="App">
       <h1>Dashboard</h1>
-      <Stats />
+      <button onClick={handleCheckHealthClick}>Check Health</button>
+      <Stats statuses={statuses} />
     </div>
   );
-}
+};
 
-export default App
+export default App;
