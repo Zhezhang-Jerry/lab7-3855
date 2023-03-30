@@ -110,7 +110,8 @@ def check():
     return NoContent, 200
 
 app = connexion.FlaskApp(__name__, specification_dir='')
-app.add_api("openapi.yml", base_path="/processing", strict_validation=True, validate_responses=True)CORS(app.app)
+app.add_api("openapi.yml", base_path="/processing", strict_validation=True, validate_responses=True)
+CORS(app.app)
 
 with open('app_conf.yml', 'r') as f:
     app_config = yaml.safe_load(f.read())
