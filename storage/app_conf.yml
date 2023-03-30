@@ -1,11 +1,11 @@
 version: 1
 user: root
 password: root
-hostname: 172.30.0.7
+hostname: 172.30.0.4
 port: 3306
 db: events
 
 events:
-  hostname: 172.30.0.4
+  hostname: 172.30.0.5
   port: 29092
   topic: events
