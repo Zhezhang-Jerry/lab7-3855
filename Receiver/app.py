@@ -65,7 +65,7 @@ def sell(body):
     process_event(body, 'sell')
     return NoContent, 201
 
-def health(body):
+def health():
     print("check finished")
     return NoContent, 200
 
