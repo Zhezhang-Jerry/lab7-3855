@@ -12,9 +12,9 @@ statuses = {
     "processing": ""
 }
 services = {
-    "receiver": "http://172.30.0.10/health",
-    "storage": "http://172.30.0.9/health",
-    "processing": "http://172.30.0.8/health"
+    "receiver": "http://34.221.95.160/receiver/health",
+    "storage": "http://34.221.95.160/storage/health",
+    "processing": "http://34.221.95.160/processing/health"
 }
 
 def check():
