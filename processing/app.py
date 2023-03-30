@@ -56,7 +56,7 @@ def populate_stats():
     # TODO create a last_updated variable that is initially assigned the timestamp, i.e. last_updated = timestamp
     timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
     last_updated = data["last_updated"]
-    buy_events = requests.get(f'http://172.30.0.9:8090/buy?timestamp={last_updated}')
+    buy_events = requests.get(f'http://34.221.95.160/storage/buy?timestamp={last_updated}')
     buy_events = buy_events.json()
     print(buy_events)
     for b_event in buy_events:
@@ -64,7 +64,7 @@ def populate_stats():
             data['max_buy_price'] = b_event['item_price']
         data["num_buys"] += b_event["buy_qty"]
 
-    sell_events = requests.get(f'http://172.30.0.9:8090/sell?timestamp={last_updated}')
+    sell_events = requests.get(f'http://34.221.95.160/storage/sell?timestamp={last_updated}')
     sell_events = sell_events.json()
     for s_event in sell_events:
         if s_event["item_price"] > data["max_sell_price"]:
