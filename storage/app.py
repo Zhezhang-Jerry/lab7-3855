@@ -167,7 +167,7 @@ def get_sells(timestamp):
 
     return data, 200
 
-def health():
+def health(body):
     print("check finished")
     return NoContent, 200
 
