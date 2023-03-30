@@ -105,7 +105,7 @@ def init_scheduler():
     sched.add_job(populate_stats, 'interval', seconds=app_config['period'])
     sched.start()
 
-def health(boy):
+def health():
     print("check finished")
     return NoContent, 200
 
