@@ -4,6 +4,7 @@ import logging
 import logging.config
 import requests
 import yaml
+from flask_cors import CORS
 
 statuses = {
     "receiver": "",
@@ -40,7 +41,8 @@ def check():
 app = connexion.FlaskApp(__name__, specification_dir='')
 
 # if you are deploying this to your VM, make sure to add base_path="/health" to the add_api method (and update your NGINX config to proxy requests to the health service)
-app.add_api("openapi.yml", strict_validation=True, validate_responses=True)
+app.add_api("openapi.yml", base_path="/health", strict_validation=True, validate_responses=True)
+CORS(app.app)
 
 with open('log_conf.yml', 'r') as f:
     log_config = yaml.safe_load(f.read())
