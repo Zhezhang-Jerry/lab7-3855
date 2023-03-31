@@ -20,7 +20,13 @@ const App = () => {
     <div className="App">
       <h1>Dashboard</h1>
       <button onClick={handleCheckHealthClick}>Check Health</button>
-      <Stats statuses={statuses} />
+      <div>
+        {
+          Object.keys(statuses).map( element => {
+            return <div> {element}: {statuses[element]} </div>
+          })
+        }
+      </div>
     </div>
   );
 };
