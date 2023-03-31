@@ -27,6 +27,7 @@ const App = () => {
           })
         }
       </div>
+      <Stats statuses={statuses} />
     </div>
   );
 };
