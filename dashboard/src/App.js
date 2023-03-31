@@ -7,7 +7,7 @@ const App = () => {
 
   const handleCheckHealthClick = async () => {
     try {
-      const res = await fetch('172.30.0.7/check');
+      const res = await fetch('http://34.221.95.160/health');
       const data = await res.json();
       setStatuses(data);
     } catch (err) {
