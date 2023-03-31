@@ -9,6 +9,7 @@ const App = () => {
     try {
       const res = await fetch('http://34.221.95.160/health/check');
       const data = await res.json();
+      console.log(data)
       setStatuses(data);
     } catch (err) {
       console.error(err);
